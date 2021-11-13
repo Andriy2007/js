@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   // 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result.
+
+let xxx = [1, 4, 7, 12, 16, 23, 31, 37, 42, 49];
+let result = (xxx[0]+xxx[1]+xxx[2]+xxx[3]+xxx[4]+xxx[5]+xxx[6]+xxx[7]+xxx[8]+xxx[9]+xxx[10]);
+
+  // 2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
+
+let book = {
+    name: 'think like a monk',
+    pages: 414,
+    genre: 'psychological'
+   }
+
+  // 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+  /* let book = {
+       name: give and take,
+       pages: 310,
+       genre: 'psychological',
+       avtors: Adam Grand
+   }*/
+
+  // 4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+
+   let iii = [
+   {name: 'Harry', number: 555, genre: 'fiction', authors: 'Joanne Rowling'},
+   {name: 'Dog', number: 663, genre: 'documentary', authors: 'Roman Gulya'},
+   {name: 'Spider', number: 343, genre: 'documentary', authors: 'igor Faynyi'}
+   ]
+console.log(iii[0])
+   console.log(iii[1])
+   console.log(iii[2])
+
+
+  // 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+   //Значення площі зберігати в змінній s.
+
+  /* let h = 23;
+   let w = 10;
+   let s = h*w;
+   console.log(s)*/
+
+
+ //  6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+  // результат помістіть у змінну v.
+
+   let h = 10;
+   let d = 4;
+   let v = 3.14*d**2*h;
+   console.log(v)
+
+  // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+  // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
+
+
+   let n = 3;
+   let m = 4;
+   let k = Math.sqrt(n ** 2 + m ** 2);
+   console.log(k)
+
+</script>
+
+</body>
+</html>
