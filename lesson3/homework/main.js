@@ -109,8 +109,8 @@ container[8] = true;
 container[9] = false;
 for (let s = 0; s < container.length; s++) {
     const sss = container[s];
-       console.log(sss);
-       document.write(sss);
+    console.log(sss);
+    document.write(sss);
 }
 
 for (let s = 0; s < 10; s++) {
