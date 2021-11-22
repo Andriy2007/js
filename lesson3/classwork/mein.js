@@ -59,5 +59,3 @@ for (let i = 0; i < general.length; i++){
  for (let i = generalBack.length-1; i >= 0; i--){
      console.log(generalBack[i]);
  }
-
-//9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
