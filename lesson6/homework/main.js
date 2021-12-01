@@ -48,8 +48,6 @@ let trim = str.trim();
 console.log(trim);
 
 
-
-
 //- Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //let str = 'Каждый охотник желает знать';
 //let arr = stringToarray(str);
@@ -60,7 +58,6 @@ console.log(trim);
   }
   let str5 = 'Каждый охотник желает знать';
   let arr = stringToarray(str5);
-  console.log(arr);
   document.writeln(arr);
 
 
@@ -80,20 +77,17 @@ document.writeln(delete_characters(str6, 7));
 //  let str = "HTML JavaScript PHP";
 //document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
 
-let insert_dash = (str7) => {
- let splitJoinToUpperCase = str7.split(' ').join('-').toUpperCase();
- return splitJoinToUpperCase;
-};
+function insert_dash(str7)  {
+ return str7.replaceAll(' ', '-').toUpperCase();
+}
 let str7 = "HTML JavaScript PHP";
 console.log(insert_dash(str7));
 
 
 
 //- Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
-let changeUp = (str) => {
- return str[0].toUpperCase() + str.slice(1)
-};
-console.log(changeUp('andriy savchuk olexsandrovuch'));
+function changeUp(str8) {
+ return str8[0].toUpperCase() + str8.slice(1);
+}
+console.log(changeUp('andriy'));
 
-
-//- Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
