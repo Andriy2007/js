@@ -41,26 +41,57 @@ class CarClass {
         this.year = year;
         this.maxSpeed = maxSpeed;
         this.volume = volume;
-        drive() {
+    }
+        drive () {
             console.log(`їдемо зі швидкістю ${this.maxSpeed} на годину`);
-        }
+        };
         info() {
             console.log(`модель - ${this.model}, виробник - ${this.producer}, рік - ${this.year}`);
-        }
+        };
         increaseMaxSpeed(newSpeed) {
             this.maxSpeed = this.maxSpeed + newSpeed;
-        }
+        };
         changeYear(newValue) {
             this.year = newValue;
-        }
+        };
         addDriver(driver) {
             this.driver = driver;
-        }
-    }
+        };
 }
 
 
-//-ствоідну попелюшку за допомоги функції масиву find та відповідного колбекурити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
-// //Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-// //    За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-// //    Додатково, знайти необх
+//-створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
+//Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
+//За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+//Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+class Quine {
+    constructor(name, age, size) {
+        this.name = name;
+        this.age = age;
+        this.size = size;
+    }
+}
+
+let quines = [
+    new Quine('Quine1', 12, 30),
+    new Quine('Quine2', 13, 32),
+    new Quine('Quine3', 14, 34),
+    new Quine('Quine4', 15, 36),
+    new Quine('Quine5', 16, 38),
+    new Quine('Quine6', 17, 40),
+    new Quine('Quine7', 18, 42),
+    new Quine('Quine8', 19, 44),
+    new Quine('Quine9', 20, 46),
+    new Quine('Quine10', 21, 48),
+
+]
+class Prince {
+    constructor(name, age, shoe) {
+        this.name = name;
+        this.age = age;
+        this.shoe = shoe;
+    }
+}
+
+let prince = new Prince('prince', 16, 38);
+let quine = quines.find(value => value.size === prince.shoe);
