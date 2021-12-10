@@ -1,0 +1,20 @@
+.menu {
+    transition: 1s;
+    background: silver;
+    min-height: 20px;
+}
+.menuChange {
+    height: 0;
+    overflow: hidden;
+}
+.hide {
+    height: 0;
+    overflow: hidden;
+}
+.body-comment {
+    transition: 1s;
+}
+.hide-body {
+    height: 0;
+    overflow: hidden;
+}
